@@ -1,0 +1,7 @@
+{
+  "name": "demo-cap3-plugin-mock",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
