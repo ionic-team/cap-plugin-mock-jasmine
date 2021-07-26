@@ -8,6 +8,7 @@
     "e2e": "ng e2e",
     "lint": "ng lint",
     "ng": "ng",
+    "prepare": "husky install",
     "start": "ng serve",
     "test": "ng test",
     "test:edge": "ng test --browsers=EdgeHeadless"
