@@ -142,7 +142,8 @@ Typically, within the `tsconfig.json` file, I do a little TypeScript path mappin
 ```JSON
     "paths": {
       "@app/*": ["src/app/*"],
-      "@env/*": ["src/environments/*"]
+      "@env/*": ["src/environments/*"],
+      "@test/*": ["test/*"]
     },
 ```
 

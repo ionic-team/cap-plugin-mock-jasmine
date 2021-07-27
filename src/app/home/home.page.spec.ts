@@ -1,14 +1,12 @@
+import { DebugElement } from '@angular/core';
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
-import { IonicModule } from '@ionic/angular';
+import { By } from '@angular/platform-browser';
 import { Storage } from '@capacitor/storage';
 import { Toast } from '@capacitor/toast';
-
+import { IonicModule } from '@ionic/angular';
+import { click, setInputValue } from '@test/util';
 import { HomePage } from './home.page';
-import { DebugElement } from '@angular/core';
-import { By } from '@angular/platform-browser';
-import { setInputValue } from '@test/util';
-import { click } from '@test/util';
 
 describe('HomePage', () => {
   let component: HomePage;
