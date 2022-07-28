@@ -1,6 +1,6 @@
 # Capacitor Plugin Mocks with Jasmine
 
-Mocking a plugin in a unit test can be a challenge. Most mocking libraries mock an object by wrapping a JavaScript proxy around the object. Capacitor plugins, however, are already set up as JavaScript proxies, and you cannot create a proxy of a proxy. To get around this when using Jest as your testing framework, <a href="https://jestjs.io/docs/manual-mocks" _target="blank">manual mocks</a> would typically be used. Angular projects, however, use Jasmine by default and the manual mocking is not available. This project shows how to set up a similar structure within a projet that is using the Jasmine unit testing framework.
+Mocking a plugin in a unit test can be a challenge. Most mocking libraries mock an object by wrapping a JavaScript proxy around the object. Capacitor plugins, however, are already set up as JavaScript proxies, and you cannot create a proxy of a proxy. To get around this when using Jest as your testing framework, <a href="https://jestjs.io/docs/manual-mocks" _target="blank">manual mocks</a> would typically be used. Angular projects, however, use Jasmine by default and the manual mocking is not available. This project shows how to set up a similar structure within a project that is using the Jasmine unit testing framework.
 
 ## The Manual Mocks (Jest)
 
@@ -13,7 +13,7 @@ For this project, I am using two Capacitor plugins: `@capacitor/storage` and `@c
 | |
 | +- @capacitor
 |   |
-|   +- storeage.ts
+|   +- storage.ts
 |   +- toast.ts
 ...
 +- src
@@ -21,7 +21,7 @@ For this project, I am using two Capacitor plugins: `@capacitor/storage` and `@c
 
 The code in these files create some simple stubs that I use within the tests. For example:
 
-**storeage.ts**
+**storage.ts**
 
 ```TypeScript
 export const Storage = {
@@ -104,13 +104,13 @@ First, set up a `__mocks__` directory _exactly_ the same as was done with the Je
 | |
 | +- @capacitor
 |   |
-|   +- storeage.ts
+|   +- storage.ts
 |   +- toast.ts
 ...
 +- src
 ```
 
-**storeage.ts**
+**storage.ts**
 
 ```TypeScript
 export const Storage = {
